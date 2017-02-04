@@ -1,3 +1,7 @@
+body {
+    background: -webkit-linear-gradient(right, #ffcccc, #cceeff);
+}
+
 #search-bar {
     margin: auto;
     float: none;
