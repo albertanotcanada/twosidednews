@@ -1,3 +1,4 @@
-#my-search-bar {
-    align-items: center;
+#search-bar {
+    margin: auto;
+    float: none;
 }
