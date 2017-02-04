@@ -1,3 +1,20 @@
+#background {
+    background: -webkit-linear-gradient(right, #ffcccc, #cceeff);
+}
+
+#logo {
+    margin-bottom: 2%;
+    text-align: center;
+    color: #222222;
+    font-size: 50pt;
+    font-family: sans-serif;
+    font-weight: 550
+}
+
+#search-bar-row {
+    margin-top: 11%;
+}
+
 #search-bar {
     margin: auto;
     float: none;
