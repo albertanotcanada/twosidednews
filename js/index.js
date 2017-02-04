@@ -20,6 +20,13 @@ $(document).ready(function(){
 //                         link, title, snippet
 //                         $("#result").html(data.item[0]);
                      console.log(data);
+                     $
+                 });
+                 $.get(conserQuery, function(data){
+//                         "data" now contains all of the needed queries
+//                         link, title, snippet
+//                         $("#result").html(data.item[0]);
+                     console.log(data);
                  });
             }
         });
