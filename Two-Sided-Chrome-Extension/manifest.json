@@ -1,0 +1,37 @@
+// most of this code was taken from here: https://developer.chrome.com/extensions/getstarted
+
+// metada file in JSON which declares what your chrome 
+// extension will do and permissions required to do
+// those things
+
+{
+  // properties of your chrome extension
+
+  // manifest_version, name, and version are *required*
+  "manifest_version": 2,
+  "name": "TwoSided",
+  "version": "1.0",
+  "description": "A simple Chrome extension",
+  // API to request permissions
+  // in this example we are asking for permission
+  // to use the chrome.tabs API and Twitter API
+  "permissions": [
+    "tabs",
+    "*://*.twitter.com/*"
+  ],
+
+  // could do browser_action or page_action or none
+  
+  // broser action: for features that make sense for most pages
+  // page actions: for features that make sense for only a few pages
+  "browser_action": {
+    // icon in the google chrome toolbar
+    "default_icon": "icon.png",
+    // some html that will pop up when you hover over the icon
+    // need to have a popup.html file that specifies what it
+    // will look like
+    "default_popup": "popup.html",
+    // will appear when you hover over the link
+    "default_title": "click me!"
+  }
+}
