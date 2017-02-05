@@ -6,6 +6,9 @@ body {
     margin: auto;
     float: none;
 }
+.page-header{
+    text-align: center
+}
 
 .img-responsive {
 	height: 400px;
