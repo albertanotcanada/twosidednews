@@ -26,12 +26,12 @@
   // page actions: for features that make sense for only a few pages
   "browser_action": {
     // icon in the google chrome toolbar
-    "default_icon": "icon.png",
+    "default_icon": "logo-twosided.png",
     // some html that will pop up when you hover over the icon
     // need to have a popup.html file that specifies what it
     // will look like
     "default_popup": "popup.html",
     // will appear when you hover over the link
-    "default_title": "click me!"
+    "default_title": "See another side"
   }
 }
