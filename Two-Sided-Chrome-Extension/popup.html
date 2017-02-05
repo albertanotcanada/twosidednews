@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- ^^ This tells the browser we're using HTML -->
+
+<style> 
+	.popup { 
+		width: 400px;
+	}
+	#title { 
+		font-size: 2em; 
+	}
+</style> 
+
+<html>
+<!-- ^^ The root of the document object model (DOM) that the browser uses to represent web pages is an "html" element -->
+  <body>
+  	<!-- ^^ The "body" element contains the part of the page that gets displayed on your screen -->
+  	<div class="popup"> 
+	    <b> We found a contrary article dealing with the same issue: </b>
+	    <p id="title"> </p> 
+	    <p id="description"> </p> 
+	    <a id="link" href=""> </a>
+	</div> 
+    <script
+  src="jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="bundle.js"> </script> 
+  </body>
+</html>
