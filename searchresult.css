@@ -1,5 +1,17 @@
 body {
+    background: -webkit-linear-gradient(right, #ff8080, #99ccff);
     background: -webkit-linear-gradient(right, #ffcccc, #cceeff);
+/*
+    background: url(img/background.svg);
+    background-repeat: no-repeat;
+    background-size: 1500px auto;
+    background-attachment: fixed;
+    background-position: center;
+*/
+}
+
+.img-logo{
+    height: 20px;   
 }
 
 #search-bar {
@@ -8,6 +20,7 @@ body {
 }
 .page-header{
     text-align: center;
+    padding-bottom: 20px;
     font-family: 'Rubik', sans-serif;
 }
 

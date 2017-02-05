@@ -21,6 +21,9 @@ $(document).ready(function(){
 //                         link, title, snippet
 //                         $("#result").html(data.item[0]);
                      console.log(data);
+//                     if(data.items[0].pagemap.person == null){
+//                         
+//                     }
                     $("#left-1 a").attr('href', data.items[0].link);
                     $("#left-1 img").attr('src', data.items[0].pagemap.cse_image[0].src);
                     $("#left-1 h3").html(data.items[0].title);

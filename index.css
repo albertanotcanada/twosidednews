@@ -1,12 +1,10 @@
 body {
-    background: -webkit-linear-gradient(right, #ffcccc, #cceeff);
+/*    background: -webkit-linear-gradient(right, #ffcccc, #cceeff);*/
+    background: url(img/background.svg);
 }
 
-#page-header img{
-    height: 100px;
-}
-#img-logo{
-    height: 100px;
+#page-header .img-logo{
+    height: 50px;   
 }
 
 #logo {
