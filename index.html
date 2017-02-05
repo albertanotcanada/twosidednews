@@ -13,9 +13,10 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <link href="searchresult.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/2-col-portfolio.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Asul|Cardo|Chivo|Eczar|Pathway+Gothic+One|Roboto+Mono|Rubik|Tenor+Sans|Work+Sans" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,31 +25,165 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    
 </head>
 
-<body id="background">
+<body>
 
-
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Two Sided News</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Two Sided News
+                </h1>
+            </div>
+        </div>
 
     <!-- Page Content -->
     <div class="container">
-        <div class="row" id="search-bar-row">
-          <h1 id="logo">
-              Two Side News
-          </h1>
+        <div class="row">
           <div class="col-lg-7" id="search-bar">
             <div class="input-group">
-              <input type="text" class="form-control"
+              <input type="text" class="form-control" id="query-Input"
                                         placeholder="Search for an article...">
               <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
+                <button class="btn btn-secondary" id="go-button" type="button">Go!</button>
               </span>
             </div>
           </div>
         </div>
+        
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item" id="left-1">
+                <a href="http://www.huffingtonpost.com/entry/pricking-my-american-bubble_us_588fa290e4b04c35d5835067?utm_hp_ref=liberals">
+                    <img class="img-responsive" src="http://img.huffingtonpost.com/asset/scalefit_630_noupscale/588fa3eb1700001c002d9530.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="http://www.huffingtonpost.com/entry/pricking-my-american-bubble_us_588fa290e4b04c35d5835067?utm_hp_ref=liberals"> Breaking Out Of My American Bubble</a>
+                </h3>
+                <p>For the past year, at least, if not for every election cycle, pundits and forecasters in American politics speak about the “bubbles” of the East and West Coasts. Those of us who live in these enclaves don’t “America” </p>
+            </div>
+            <div class="col-md-6 portfolio-item"id="right-1">
+                <a href="http://townhall.com/tipsheet/justinholcomb/2017/02/03/breaking-washington-state-judge-bans-trump-executive-immigration-order-n2281310">
+                    <img class="img-responsive" src="http://media.townhall.com/townhall/reu/ha/2016/341/f20e6f61-8f97-49f2-8395-45ca0defb30d.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="http://townhall.com/tipsheet/justinholcomb/2017/02/03/breaking-washington-state-judge-bans-trump-executive-immigration-order-n2281310">Breaking: Washington State Judge Stays Trump Executive Immigration Order Nationwide</a>
+                </h3>
+                <p>A federal judge in Washington has granted a restraining order which has immediately halted President Donald Trump's immigration executive order effective nationwide.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item" id="left-2">
+                <a href="http://www.cnn.com/2017/02/04/politics/trump-obama-security-blanket/index.html">
+                    <img class="img-responsive" src="http://www.myunseen.com/wp-content/uploads/2016/11/Donald-Trump-Trumpeting-a-Joke-700x400.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="http://www.cnn.com/2017/02/04/politics/trump-obama-security-blanket/index.html">Donald Trump is using Barack Obama as a security blanket</a>
+                </h3>
+                <p>Trump and his White House advisers are now using Obama as a security blanket, making almost identical moves he made during his tenure and defending possible mistakes by arguing that they were initially made by Barack Obama..</p>
+            </div>
+            <div class="col-md-6 portfolio-item" id="right-2">
+                <a href="http://www.theblaze.com/podcasts/ukraine-gave-up-its-nukes-at-americas-urging-leaving-them-powerless-to-stop-russia/">
+                    <img class="img-responsive" src="http://informator.media/wp-content/uploads/2016/12/%D0%91%D0%BE%D0%B5%D0%B2%D0%B8%D0%BA%D0%B8_11-700x400.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="http://www.theblaze.com/podcasts/ukraine-gave-up-its-nukes-at-americas-urging-leaving-them-powerless-to-stop-russia/">Ukraine gave up its nukes at America’s urging, leaving them powerless to stop Russia</a>
+                </h3>
+                <p> U.S. Ambassador to the United Nations Nikki Haley has indicated President Donald Trump intends to maintain U.S. sanctions against Russia until Ukraine’s independence is fully restored, including control over the Crimea</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item" id="left-3">
+                <a href="http://www.huffingtonpost.com/entry/mike-pence-recognized-black-history-month-by-honoring-a-white-man_us_58936c19e4b06f344e406b78">
+                    <img class="img-responsive" src="http://img.huffingtonpost.com/asset/crop_4_186_1299_864,scalefit_630_noupscale/58939c9c2800001f00996841.jpeg" alt="">
+                </a>
+                <h3>
+                    <a href="http://www.huffingtonpost.com/entry/mike-pence-recognized-black-history-month-by-honoring-a-white-man_us_58936c19e4b06f344e406b78">Mike Pence Recognized Black History Month By Honoring A White Man</a>
+                </h3>
+                <p>Vice-President Mike Pence posted a tweet on Wednesday in which he recognized the beginning of Black History Month by honoring a white man.</p>
+            </div>
+            <div class="col-md-6 portfolio-item" id="right-3">
+                <a href="http://www.foxnews.com/politics/2017/01/25/trump-to-order-construction-us-mexican-border-wall-reportedly-to-suspend-refugee-program.html">
+                    <img class="img-responsive" src="http://americaspaper.com/wp-content/uploads/2016/07/trumpwall.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="http://www.foxnews.com/politics/2017/01/25/trump-to-order-construction-us-mexican-border-wall-reportedly-to-suspend-refugee-program.html">Trump to order construction of US-Mexico border wall; expected to suspend refugee program </a>
+                </h3>
+                <p>President Trump on Wednesday is expected to order the construction of his long-promised wall along the U.S.-Mexico border and take other actions on immigration, a cornerstone of his presidential campaign.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- Pagination -->
+       <!--  <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <!-- /.row -->
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; TwoSidedNews 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
 
     </div>
     <!-- /.container -->
@@ -58,6 +193,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
     <script src="js/index.js"></script>
 
 </body>
