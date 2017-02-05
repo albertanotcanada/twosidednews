@@ -14,8 +14,8 @@ $(document).ready(function(){
                          querySum += "+"
                      }
                  }
-                 var liberalQuery = "https://www.googleapis.com/customsearch/v1?q=" + querySum + "&cx=003349935858378228433%3Awuei2zd_tuc&key=AIzaSyDvQ7P_rS2Yh28FQCUrqNYQlZKKCwDclW0";
-                 var conserQuery = "https://www.googleapis.com/customsearch/v1?q="+querySum+"&cx=013199845727965234313:allhxzwrat4&key=AIzaSyDvQ7P_rS2Yh28FQCUrqNYQlZKKCwDclW0"
+                 var liberalQuery = "https://www.googleapis.com/customsearch/v1?q=" + querySum + "&tbm=nws&cx=003349935858378228433%3Awuei2zd_tuc&key=AIzaSyDvQ7P_rS2Yh28FQCUrqNYQlZKKCwDclW0";
+                 var conserQuery = "https://www.googleapis.com/customsearch/v1?q="+querySum+"&tbm=nws&cx=013199845727965234313:allhxzwrat4&key=AIzaSyDvQ7P_rS2Yh28FQCUrqNYQlZKKCwDclW0"
                  $.get(liberalQuery, function(data){
 //                         "data" now contains all of the needed queries
 //                         link, title, snippet
