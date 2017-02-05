@@ -2,15 +2,20 @@
 <!-- ^^ This tells the browser we're using HTML -->
 
 <style> 
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+	body { 
+		font-family: 'Open Sans', sans-serif;
+	}
 	.popup { 
 		width: 400px;
 		padding: 20px;
 	}
 	#title { 
 		font-size: 2em; 
+		font-family: 'Oswald', sans-serif; 
 	}
 	#description { 
-		font-style: serif; 
+		
 	}
 </style> 
 
@@ -19,10 +24,11 @@
   <body>
   	<!-- ^^ The "body" element contains the part of the page that gets displayed on your screen -->
   	<div class="popup"> 
-	    <b> We found a contrary article dealing with the same issue: </b>
-	    <p id="title"> </p> 
+	    <b> We found a contrary article dealing with a same or similar issue: </b>
+	    <br> 
+	    <a id="title" href=""> </a> 
 	    <p id="description"> </p> 
-	    <a id="link" href=""> </a>
+	    <a id="source"> </a>
 	</div> 
     <script
   src="jquery-3.1.1.min.js"

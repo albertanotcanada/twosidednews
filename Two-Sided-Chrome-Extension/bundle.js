@@ -29,8 +29,10 @@ chrome.tabs.query({'active': true}, function (tabs) {
     var searchID; 
     if (sources[site] == "liberal") { 
         searchID = "013199845727965234313:allhxzwrat4" ; // search conservative 
-    } else { 
+    } else if (sources[site] == "conservative") { 
         searchID = "003349935858378228433%3Awuei2zd_tuc"; // search liberal 
+    } else { 
+
     }
 
     // Google custom search api 
@@ -38,10 +40,14 @@ chrome.tabs.query({'active': true}, function (tabs) {
         console.log("Data: " + data + "\nStatus: " + status); 
         //$("#title").innerHTML = data.items[0].title; 
         document.getElementById('title').innerHTML = data.items[0].title;
+        document.getElementById('title').href = data.items[0].link;
         console.log(data.items[0].title);
         console.log(data);
+        /*
         document.getElementById('link').innerHTML = data.items[0].link;
         document.getElementById('link').href = data.items[0].link;
+        */ 
+        document.getElementById('source').innerHTML = "from " + data.items[0].displayLink;
         if (data.items[0].description != "undefined") { 
             document.getElementById('description').innerHTML = data.items[0].snippet; 
         } 
