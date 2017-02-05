@@ -32,6 +32,6 @@
     // will look like
     "default_popup": "popup.html",
     // will appear when you hover over the link
-    "default_title": "click me!"
+    "default_title": "See another side"
   }
 }
