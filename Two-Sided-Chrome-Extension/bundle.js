@@ -16,6 +16,20 @@ var sources = {
     "www.msnbc.com": "liberal"
 }
 
+var logos = { 
+    "www.foxnews.com": "http://global.fncstatic.com/static/v/all/img/og/og-fn-foxnews.jpg", 
+    "www.theblaze.com": "https://upload.wikimedia.org/wikipedia/en/1/19/TheBlaze_Logo.png", 
+    "www.breitbart.com": "conservative", 
+    "www.drudgereport.com": "conservative", 
+    "www.newyorker.com": "https://s-media-cache-ak0.pinimg.com/originals/13/6e/01/136e012417e5be40f403fd15cd854665.jpg", 
+    "www.buzzfeed.com": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/BuzzFeed.svg/2000px-BuzzFeed.svg.png", 
+    "www.theatlantic.com": "https://cdn.theatlantic.com/assets/static/b/theatlantic/img/default-thumbnail.png", 
+    "www.washingtonpost.com": "https://s3.amazonaws.com/share-the-facts/logos/washington_post_logo.png", 
+    "www.nytimes.com": "https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png", 
+    "www.cnn.com": "lhttps://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cnn.svg/2000px-Cnn.svg.png",
+    "www.huffingtonpost.com": "http://jerz.setonhill.edu/wp-content/uploads/2013/12/image6.jpg", 
+    "www.msnbc.com": "http://www.msnbc.com/sites/msnbc/themes/leanforward/images/site-header/msnbc-logo-card-twitter.png"
+}
 
 chrome.tabs.query({'active': true}, function (tabs) {
     var url = tabs[0].url; 
@@ -47,24 +61,26 @@ chrome.tabs.query({'active': true}, function (tabs) {
         $.get("https://www.googleapis.com/customsearch/v1?q="+query+"&cx=" + searchID + "&key=" + key, function(data, status){
             console.log(data);
             if (data == null) { 
-
+                $("#message").html("<b> Sorry, we couldn't find an article with similar content. </b>"); 
             } else { 
+                var article = data.items[0]; 
+                if (data.items[0].pagemap.metatags.pagetype != "article") { 
+                    article = data.items[1]; 
+                }
                 console.log("Data: " + data + "\nStatus: " + status); 
-                //$("#title").innerHTML = data.items[0].title; 
-                document.getElementById('title').innerHTML = data.items[0].title;
-                document.getElementById('title').href = data.items[0].link;
-                console.log(data.items[0].title);
-                console.log(data);
-                /*
-                document.getElementById('link').innerHTML = data.items[0].link;
-                document.getElementById('link').href = data.items[0].link;
-                */ 
-                document.getElementById('source').innerHTML = "from " + data.items[0].displayLink;
-                if (data.items[0].description != "undefined") { 
-                    document.getElementById('description').innerHTML = data.items[0].snippet; 
+                document.getElementById('title').innerHTML = article.title;
+                document.getElementById('title').href = article.link;
+
+                
+                // console.log(data.items[0].title);
+                // console.log(data);
+
+                document.getElementById('source').innerHTML = "<img id='logo' src='" + logos[article.displayLink] + "'> </img> "//from " + data.items[0].displayLink;
+                if (article.description != "undefined") { 
+                    document.getElementById('description').innerHTML = article.snippet; 
                 } 
                 //$("#link").innerHTML = data.items[0].link; 
-                console.log("link: " + data.items[0].link);
+                console.log("link: " + article.link);
             }
 
         });

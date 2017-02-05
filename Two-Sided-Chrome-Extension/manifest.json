@@ -10,8 +10,8 @@
   // manifest_version, name, and version are *required*
   "manifest_version": 2,
   "name": "TwoSided",
-  "version": "1.0",
-  "description": "A simple Chrome extension",
+  "version": "0.0.0.1",
+  "description": "See the same article from the opposite side of the political spectrum",
   // API to request permissions
   // in this example we are asking for permission
   // to use the chrome.tabs API and Twitter API
