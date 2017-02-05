@@ -2,6 +2,13 @@ body {
     background: -webkit-linear-gradient(right, #ffcccc, #cceeff);
 }
 
+#page-header img{
+    height: 100px;
+}
+#img-logo{
+    height: 100px;
+}
+
 #logo {
     margin-bottom: 2%;
     text-align: center;
